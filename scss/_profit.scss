@@ -1,0 +1,122 @@
+.profit {
+  padding: 120px 0px 64px;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    padding: 80px 0px 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 0px 25px;
+  }
+
+  @media (max-width: 475px) {
+    padding: 30px 0px 10px;
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    display: block;
+    background: linear-gradient(180deg, rgba(218, 248, 255, 0) 0%, rgba(218, 248, 255, 0.36) 19.64%, rgba(218, 248, 255, 0.6) 41.22%, #DAF8FF 66.05%);
+    transform: rotate(-180deg);
+    height: 60%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: 1024px) {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 64px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 44px;
+      text-align: center;
+    }
+
+    @media (max-width: 475px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 640px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+
+    @media (max-width: 1024px) {
+      align-items: center;
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: 640px) {
+      width: 100%;
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 475px) {
+      max-width: 350px;
+
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      padding: 15px;
+      background: #FFFFFF;
+      box-shadow: 0px 16px 32px -8px rgba(6, 70, 62, 0.1);
+      border-radius: 16px;
+      margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      max-width: 495px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      color: rgba(1, 51, 45, 0.8);
+
+      @media (max-width: 1024px) {
+        text-align: center;
+      }
+
+      @media (max-width: 860px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+}

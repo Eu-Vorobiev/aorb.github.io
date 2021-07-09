@@ -1,0 +1,116 @@
+.reviews {
+  padding-top: 120px;
+  padding-bottom: 64px;
+  background: $accent;
+  overflow-x: hidden;
+
+  @media (max-width: 1024px) {
+    padding: 80px 0px 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 0px 25px;
+  }
+
+  @media (max-width: 475px) {
+    padding: 30px 0px 10px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 500px;
+
+    @media (max-width: 1024px) {
+      max-height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      max-height: 300px;
+    }
+
+    @media (max-width: 475px) {
+      max-height: 200px;
+    }
+
+    @media (max-width: 36px) {
+      max-height: 100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 56px;
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    max-width: 900px;
+    position: relative;
+
+    @media (max-width: 1024px) {
+      max-width: 700px;
+      margin-bottom: 44px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 520px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__author-block {
+    position: absolute;
+    bottom: 3px;
+    left: 35%;
+    display: inline-flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      bottom: -7px;
+    }
+
+    @media (max-width: 575px) {
+      left: 40%;
+    }
+
+    @media (max-width: 475px) {
+      left: 45%;
+      bottom: -3px;
+    }
+
+    @media (max-width: 370px) {
+      left: 67%;
+      bottom: 0;
+      top: -27px;
+    }
+
+    @media (max-width: 360px) {
+      left: 45%;
+      bottom: -3px;
+      top: unset;
+    }
+
+    img {
+      margin-left: -15px;
+      border-radius: 50%;
+      border: 2px solid $accent;
+      width: 48px;
+      height: 48px;
+
+      @media (max-width: 475px) {
+        width: 32px;
+        height: 32px;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

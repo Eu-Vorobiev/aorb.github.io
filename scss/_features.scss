@@ -1,0 +1,124 @@
+.features {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: 475px) {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background: linear-gradient(180deg, rgba(218, 248, 255, 0) 0%, rgba(218, 248, 255, 0.36) 19.64%, rgba(218, 248, 255, 0.6) 41.22%, #DAF8FF 66.05%);
+    transform: rotate(180deg);
+    height: 90%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    max-width: 800px;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+      max-width: 550px;
+    }
+
+    @media (max-width: 575px) {
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 425px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 285px));
+    gap: 70px 30px;
+
+    @media (max-width: 950px) {
+      gap: 50px 30px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, minmax(auto, 285px));
+      gap: 50px 40px;
+    }
+
+    @media (max-width: 575px) {
+      grid-template-columns: repeat(2, minmax(auto, 285px));
+      gap: 40px 20px;
+    }
+
+    @media (max-width: 425px) {
+      grid-template-columns: minmax(auto, 285px);
+      gap: 30px 0px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      color: rgba($black, .8);
+
+      @media (max-width: 950px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 850px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 475px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
